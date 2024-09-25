@@ -1,8 +1,8 @@
-#Sudoku Distribuido con RPC
+# Sudoku Distribuido con RPC
 
 Este proyecto consiste en la implementación de una versión distribuida del juego Sudoku, utilizando llamadas a procedimientos remotos (RPC).
 
-##Descripción del Juego
+## Descripción del Juego
 
 El Sudoku es un juego de lógica que consiste en un tablero de 9x9, dividido en 9 bloques de 3x3. Cada posición del tablero puede contener un número entre 1 y 9. El objetivo del juego es rellenar todo el tablero siguiendo estas reglas:
 
@@ -12,7 +12,7 @@ El Sudoku es un juego de lógica que consiste en un tablero de 9x9, dividido en 
 
 El juego comienza con un tablero parcialmente lleno, y el jugador debe completar el resto de las celdas siguiendo las reglas mencionadas. El juego termina cuando el tablero está correctamente completado.
 
-##Funcionalidades del Proyecto
+## Funcionalidades del Proyecto
 
 Este proyecto utiliza una arquitectura cliente-servidor en la que el servidor centralizado gestiona múltiples juegos de Sudoku para diferentes clientes. Las principales características son:
 
@@ -32,14 +32,14 @@ Este proyecto utiliza una arquitectura cliente-servidor en la que el servidor ce
 
 	•	El cliente se desconecta del servidor al terminar la sesión de juego.
 
-##Arquitectura del Sistema
+## Arquitectura del Sistema
 
 La aplicación se divide en dos componentes principales:
 
 	•	Servidor de Sudoku: Almacena múltiples juegos de Sudoku y permite su gestión. Los clientes se conectan al servidor mediante RPC para interactuar con los juegos.
 	•	Cliente de Sudoku: Permite a los usuarios jugar y gestionar sus juegos de Sudoku. Los clientes se conectan al servidor para obtener, modificar y almacenar Sudokus.
 
-##Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 	•	Java: Lenguaje de programación base para la implementación del Sudoku.
 	•	RPC (Remote Procedure Call): Para la comunicación entre el cliente y el servidor.
